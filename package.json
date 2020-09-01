@@ -1,0 +1,42 @@
+{
+  "name": "arridx",
+  "version": "1.0.0",
+  "description": "creates an index to an array of objects",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "dev": "watch 'npm run build' src",
+    "test": "jest build",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivekraman111/arridx.git"
+  },
+  "keywords": [
+    "array",
+    "index"
+  ],
+  "author": "Vivek Raman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivekraman111/arridx/issues"
+  },
+  "homepage": "https://github.com/vivekraman111/arridx#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "jest": "^26.4.0",
+    "watch": "^1.0.2"
+  }
+}
